@@ -1,3 +1,4 @@
+//Simple queue push and pop of integer values!
 #include<iostream>
 using namespace std;
 #define size 10
@@ -14,7 +15,7 @@ class Queue{
         rear =-1;
     }
     bool c_overflow(){
-        if(rear==size-1){
+        if(rear==size-1 && front ==0 ){ //even if we remove front == 0 it is still!!
             cout<<"Stack is Full!";
             return false;
         }
